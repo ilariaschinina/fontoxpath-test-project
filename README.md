@@ -7,7 +7,7 @@ On Firefox, the very simple query "//div", fntoxpath returns an empty array, whi
 ## How to reproduce the bug
 1. clone the project
 2. run `npm install`
-3. run `npx wepback --config webpack.config.js`
+3. run `npx webpack --config webpack.config.js`
 4. run `python3 -m SimpleHTTPServer 9000`
 5. go to http://localhost:9000/dist/ on Chrome
 6. open the console to see the matched nodes by fontoxpath using the 2 different queries: `//div`, `//*[name()='div']`
