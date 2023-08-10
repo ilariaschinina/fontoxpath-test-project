@@ -1,8 +1,8 @@
 # fontoxpath-test-project
 Tiny project to report an inconsistent behaviour of Fontoxpath across browsers, Chrome and Firefox.
 In a simple html document, fontoxpath is used to find elements that match the following queries: `//div` and `//*[name()='div']`.
-On Chrome, both queries find and match all the divs in the document.
-On Firefox, the very simple query "//div", fntoxpath returns an empty array, while the more convoluted query `//*[name()='div']`, matches the divs. 
+On Chrome the queries `//div` and `//*[name()='div']` find and match all the divs in the document. 
+On Firefox, fontoxpath with the very simple query `//div`,  returns an empty array, while with the more convoluted query `//*[name()='div']` matches the divs.
 
 ## How to reproduce the bug
 1. clone the project
