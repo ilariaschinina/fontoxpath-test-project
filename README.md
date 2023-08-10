@@ -10,10 +10,10 @@ On Firefox, the very simple query "//div", fntoxpath returns an empty array, whi
 3. run `npx wepback --config webpack.config.js`
 4. run `python3 -m SimpleHTTPServer 9000`
 5. go to http://localhost:9000/dist/ on Chrome
-6. Open the console to see the matched nodes by fontoxpath using the 2 different queries: "//div", "//*[name()='div']"
+6. open the console to see the matched nodes by fontoxpath using the 2 different queries: `//div`, `//*[name()='div']`
 ![image](https://github.com/ilariaschinina/fontoxpath-test-project/assets/54150499/189ce1d5-8e1f-47f8-a544-f66628e0016c)
 
 
 7. go to http://localhost:9000/dist/ on Firefox
-8. See how //div return an empty array, while "//*[name()='div']" actually returns some nodes
+8. see how fontoxpath retunrs an empty array with `//div`, while with `//*[name()='div']` ti actually returns some nodes
 ![image](https://github.com/ilariaschinina/fontoxpath-test-project/assets/54150499/df982944-8e4f-461b-9c03-3b6d7294f517)
